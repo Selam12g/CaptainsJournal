@@ -11,7 +11,8 @@ namespace CaptainsJournal
             string filename = DateTime.Now.ToString("dd-MM-yyyy") + ".txt";
             StreamWriter writer = new StreamWriter(filename);
 
-            
+            writer.WriteLine("Captain's log");
+            writer.WriteLine("Stardate " + DateTime.Now.ToString("dd-MM-yyyy"));
                 Console.WriteLine("Enter 'start' to begin writing in the Captain's journal.");
             line = Console.ReadLine();
             while (line != "start")
@@ -27,8 +28,7 @@ namespace CaptainsJournal
                 line = Console.ReadLine();
             }
 
-            writer.WriteLine("Captain's log");
-            writer.WriteLine("Stardate " + DateTime.Now.ToString("dd-MM-yyyy"));
+           
             writer.WriteLine("Jean-Luc Picard");
             writer.Close();
 

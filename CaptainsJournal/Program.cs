@@ -12,7 +12,8 @@ namespace CaptainsJournal
             StreamWriter writer = new StreamWriter(filename);
 
             writer.WriteLine("Captain's log");
-            writer.WriteLine("Stardate " + DateTime.Now.ToString("dd-MM-yyyy"));
+            writer.WriteLine("Startdate " + DateTime.Now.ToString("dd-MM-yyyy"));
+            
                 Console.WriteLine("Enter 'start' to begin writing in the Captain's journal.");
             line = Console.ReadLine();
             while (line != "start")
